@@ -31,7 +31,7 @@ class User(Base):
     phone_number = Column(String)
 
 
-class Votes(Base):
+class Vote(Base):
     __tablename__ = "votes"
     user_id = Column(Integer, 
                      ForeignKey("users.id", ondelete="CASCADE"),
