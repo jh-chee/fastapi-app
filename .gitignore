@@ -1,3 +1,5 @@
 .env
 __pycache__
 docker-compose-prod.yml
+*.pyc
+*calculations.py

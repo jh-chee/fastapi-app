@@ -14,5 +14,10 @@ jobs:
           python-version: "3.9"
       - name: Update pip
         run: python3 -m pip install --upgrade pip
-      - name: Intall all dependencies
+      - name: Install all dependencies
         run: pip install -r requirements.txt
+      - name: Test with pytest
+        run: |
+          pip install pytest
+          pytest
+          
